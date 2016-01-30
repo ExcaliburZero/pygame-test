@@ -14,6 +14,31 @@ class Battlefield(object):
         # The panels of the battlefield
         self.panels = None
 
+    def set_panels_normal(self):
+        """
+        The method used to set all of the panels of the battlefield to their
+        normal condition.
+
+        In this condition, every panel is set to be of the normal state, and the
+        ownership of the panels is split down the center of the battlefield.
+        """
+
+        # Create the panels
+        new_panels = []
+        for x in range(3):
+            panels_row = []
+            for y in range(6):
+                if y < 3:
+                    owner = "Player"
+                else:
+                    owner = "Enemy"
+
+                panels_row.append(BattlefieldPanel(owner, "Normal"))
+            new_panels.append(panels_row)
+
+        # Set the newly created panels to be the panels of the battlefield
+        self.panels = new_panels
+
 
 class BattlefieldPanel(object):
     """
