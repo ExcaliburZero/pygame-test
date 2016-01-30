@@ -1,4 +1,5 @@
-# pygame-test
+# pygame-test [![Travis CI Status](https://api.travis-ci.org/ExcaliburZero/pygame-test.svg)](https://travis-ci.org/ExcaliburZero/pygame-test) [![Coverage Status](https://coveralls.io/repos/ExcaliburZero/pygame-test/badge.svg?branch=master)](https://coveralls.io/r/ExcaliburZero/pygame-test?branch=master)
+
 This is a small test of pygame.
 
 ## Usage
